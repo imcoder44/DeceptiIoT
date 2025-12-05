@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeceptiIoT Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <meta http-equiv="refresh" content="10"> 
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="bg-gray-800 p-4 border-b border-gray-700 flex justify-between">
+        <h1 class="text-2xl font-bold text-blue-500">DeceptiIoT <span class="text-white text-sm">Detection System</span></h1>
+        <span class="text-green-400 font-mono">Status: ACTIVE</span>
+    </nav>
+
+    <div class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+            <h3 class="text-gray-400">Total Detected Attackers</h3>
+            <p class="text-4xl font-bold">{{ total_attacks }}</p>
+        </div>
+        
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+            <h3 class="text-gray-400">Highest Threat Score</h3>
+            {% if top_attackers %}
+            <p class="text-2xl font-bold">{{ top_attackers[0].ip }} ({{ top_attackers[0].score }})</p>
+            {% else %}
+            <p class="text-xl">No Data</p>
+            {% endif %}
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg col-span-1 md:col-span-3">
+            <h2 class="text-xl font-bold mb-4 text-red-400">Blocked IPs (Firewall Active)</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-gray-700 rounded">
+                    <thead>
+                        <tr class="text-left text-gray-400 border-b border-gray-600">
+                            <th class="p-3">IP Address</th>
+                            <th class="p-3">Description</th>
+                            <th class="p-3">Score</th>
+                            <th class="p-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for attacker in blocked_ips %}
+                        <tr class="border-b border-gray-600 hover:bg-gray-600">
+                            <td class="p-3 font-mono">{{ attacker.ip }}</td>
+                            <td class="p-3 text-yellow-300">{{ attacker.attack_type }}</td>
+                            <td class="p-3 text-red-300 font-bold">{{ attacker.score }}</td>
+                            <td class="p-3 flex gap-2">
+                                <!-- <button onclick="showLogs('{{ attacker.ip }}')" class="bg-blue-600 px-3 py-1 rounded text-sm hover:bg-blue-500">View Logs</button> -->
+                                <form action="/unblock" method="post" class="inline">
+                                    <input type="hidden" name="ip" value="{{ attacker.ip }}">
+                                    <button type="submit" class="bg-green-600 px-3 py-1 rounded text-sm hover:bg-green-500">Unblock</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg col-span-1 md:col-span-2">
+            <h2 class="text-xl font-bold mb-4 text-blue-400">Live Traffic Feed</h2>
+            <div class="h-64 overflow-y-scroll bg-black p-4 font-mono text-sm text-green-400 rounded">
+                {% for event in recent_events %}
+                <div class="mb-1 border-b border-gray-800 pb-1">
+                    <span class="text-gray-500">[{{ event.timestamp.strftime('%H:%M:%S') }}]</span>
+                    <span class="text-yellow-400">{{ event.protocol }}</span>
+                    <span class="text-blue-300">{{ event.ip }}</span> : 
+                    <span class="text-white">{{ event.payload[:50] }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4">Top Sources</h2>
+            <div id="chart" style="height: 250px;"></div>
+            <script>
+                var data = [{
+                    values: [{% for a in top_attackers %}{{ a.score }},{% endfor %}],
+                    labels: [{% for a in top_attackers %}"{{ a.ip }}",{% endfor %}],
+                    type: 'pie'
+                }];
+                Plotly.newPlot('chart', data, {paper_bgcolor: 'rgba(0,0,0,0)', font: {color: '#fff'}});
+            </script>
+        </div>
+
+    </div>
+
+    <div id="logModal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-xl w-3/4 h-3/4 flex flex-col">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold text-white">Activity Log: <span id="modalIP" class="text-blue-400"></span></h2>
+                <button onclick="closeModal()" class="text-red-500 text-xl font-bold">X</button>
+            </div>
+            <div class="overflow-y-auto flex-grow bg-black p-4 rounded font-mono text-sm text-green-400" id="modalContent">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        async def showLogs(ip) {
+            document.getElementById('logModal').classList.remove('hidden');
+            document.getElementById('modalIP').innerText = ip;
+            const content = document.getElementById('modalContent');
+            content.innerHTML = "Loading...";
+            
+            try {
+                const response = await fetch('/api/attacker/' + ip);
+                const data = await response.json();
+                let html = "";
+                data.forEach(log => {
+                    html += `<div class="mb-2 border-b border-gray-700 pb-1">
+                        <span class="text-gray-500">[${log.time}]</span> 
+                        <span class="text-yellow-500">${log.protocol}</span> 
+                        <span class="text-white">${log.payload}</span>
+                        ${log.auth !== '-' ? `<span class="text-red-400"> (Creds: ${log.auth})</span>` : ''}
+                    </div>`;
+                });
+                content.innerHTML = html;
+            } catch(e) {
+                content.innerHTML = "Error loading logs.";
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('logModal').classList.add('hidden');
+        }
+        
+        // Use standard JS function syntax for browser
+        window.showLogs = async function(ip) {
+             document.getElementById('logModal').classList.remove('hidden');
+            document.getElementById('modalIP').innerText = ip;
+            const content = document.getElementById('modalContent');
+            content.innerHTML = "Loading...";
+            
+            try {
+                const response = await fetch('/api/attacker/' + ip);
+                const data = await response.json();
+                let html = "";
+                data.forEach(log => {
+                    html += `<div class="mb-2 border-b border-gray-700 pb-1">
+                        <span class="text-gray-500">[${log.time}]</span> 
+                        <span class="text-yellow-500">${log.protocol}</span> 
+                        <span class="text-white">${log.payload}</span>
+                        ${log.auth !== '-' ? `<span class="text-red-400"> (Creds: ${log.auth})</span>` : ''}
+                    </div>`;
+                });
+                content.innerHTML = html;
+            } catch(e) {
+                content.innerHTML = "Error loading logs.";
+            }
+        }
+    </script>
+</body>
+</html>

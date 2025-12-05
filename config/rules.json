@@ -1,0 +1,8 @@
+[
+  {"id": 1, "name": "SSH/Telnet Brute Force", "type": "count", "field": "username", "threshold": 5, "window_minutes": 2, "score": 85},
+  {"id": 2, "name": "Default IoT Creds", "keywords": ["admin:admin", "root:root", "user:user", "support:support"], "score": 90},
+  {"id": 3, "name": "Malware Download (Wget/Curl)", "keywords": ["wget ", "curl ", "tftp", ".sh", ".bin", ".elf", "http://"], "score": 95},
+  {"id": 4, "name": "Reverse Shell", "keywords": ["/dev/tcp", "nc -e", "bash -i", "python -c"], "score": 100},
+  {"id": 5, "name": "Mirai Botnet Command", "keywords": ["busybox", "MIRAI", "/bin/sh"], "score": 100},
+  {"id": 6, "name": "Reconnaissance", "keywords": ["help", "?", "uname -a", "id", "whoami"], "score": 40}
+]

@@ -1,0 +1,17 @@
+# Python Enviroment 
+venv/
+__pycache__/
+
+# Logs and Database
+deceptiot.log
+*.sqlite
+*.db
+
+# Config file
+config.ini
+secrets.py
+.env
+
+# Project files
+.idea/
+.vscode/
